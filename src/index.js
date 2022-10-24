@@ -1,13 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './bootstrap.css';
 
 function Square(props) {
-    return (
-        <button className="square" onClick={props.onClick}>
-            {props.value}
-        </button>
-    )
+    if (props.value == "X") {
+        return (
+            <button className="square border red" onClick={props.onClick}>
+                {props.value}
+            </button>
+        )
+    } else {
+        return (
+            <button className="square border blue" onClick={props.onClick}>
+                {props.value}
+            </button>
+        )
+    }
+
 }
 
 class Board extends React.Component {
@@ -76,6 +85,7 @@ class Game extends React.Component {
     render() {
         return (
             <div className="game">
+                <h1 className="title"> Welcome To Tic-Tac-toe</h1>
                 <div className="game-board">
                     <Board />
                 </div>
