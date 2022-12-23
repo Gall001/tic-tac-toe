@@ -10922,14 +10922,11 @@ ol, ul {
 .game {
   display: flex;
   flex-direction: column;
-}
-
-.game-info {
-  margin-left: 20px;
+  height: 100%;
+  width: 100%;
 }
 
 .game-board{
-  width: 25%;
   margin: 0 auto;
 }
 
