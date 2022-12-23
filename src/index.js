@@ -134,7 +134,7 @@ class Game extends React.Component {
                         <Sidebar.Nav>
                             <Sidebar.Nav.Link eventKey="menu_title">
                             <Sidebar.Nav.Icon>1</Sidebar.Nav.Icon>
-                            <Sidebar.Nav.Title>Menu Title</Sidebar.Nav.Title>
+                            <Sidebar.Nav.Title>Tic Tac Toe</Sidebar.Nav.Title>
                             </Sidebar.Nav.Link>
                             <Sidebar.Sub eventKey={0}>
                             <Sidebar.Sub.Toggle>

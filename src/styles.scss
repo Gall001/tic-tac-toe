@@ -2,6 +2,12 @@
 //@import "~react-bootstrap-sidebar-menu/dist/sidebar-menu";
 @import "./sidebar-menu";
 
+@mixin mobileview {
+	@media only screen and (max-width: 769px) {
+		@content;
+	}
+}
+
 html, body, #root {
   padding: 0;
   width: 100%;
@@ -47,4 +53,13 @@ html, body, #root {
 .game-board{
     display: flex;
     justify-content: center;
+}
+
+.square{
+    @include mobileview{
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        font-size: 100px;
+    }
 }
